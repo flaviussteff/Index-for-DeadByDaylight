@@ -1,3 +1,3 @@
 # Index-for-DeadByDaylight
 
-![imagine index](https://imgur.com/lWOycPt)
+![screenshot](./ss1.png)
