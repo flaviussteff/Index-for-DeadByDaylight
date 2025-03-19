@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dead by Daylight</title>
+    <link rel="stylesheet" href="maps-styles.css" type="text/css">
+    <script type="text/javascript" src="maps-script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="../dbd.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="topbar-wrap">
+        <a class="logo" href="../index.html"></a>
+        <div class="nav-wrap">
+            <a href="../index.html" class="nu0" data-id="top" aria-label="Navigate to the home page">HOME</a>
+            <a href="../characters/characters.html" class="nu1" data-id="characters" aria-haspopup="true" aria-expanded="false">
+                CHARACTERS ↴
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Laurie Strode</li>
+                        <li>Cheryl Mason</li>
+                        <li>David Tapp</li>
+                        <li>Bill Overbeck</li>
+                        <li>Michael Myers</li>
+                        <li>The Ghost Face</li>
+                        <li>The Pig</li>
+                        <li>The Executioner</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="../maps/maps.html" class="nu2" data-id="maps" aria-haspopup="true" aria-expanded="false">
+                MAPS ↴
+                <div class="dropdown-content2">
+                    <ul>
+                        <li>Haddonfield</li>
+                        <li>Hawkins Laboratory</li>
+                        <li>Gideon Meat Plant</li>
+                    </ul>
+                </div>
+            </a>
+            <a href=" " class="nu3" data-id="maps">   </a>
+            <a href="../user/user.html" class="nu4" data-id="user" aria-label="Navigate to the user page"> USER</a>
+        </div>
+        <div class="social-wrap">
+            <a href="https://www.facebook.com/DeadByDaylight/" class="facebook"></a>
+            <a href="https://www.instagram.com/deadbydaylight/" class="instagram"></a>
+            <a href="https://discord.com/invite/deadbydaylight" class="discord"></a>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="hf">
+            <h1 id="titlu1">HADDONFIELD</h1>
+            <input type="number" id="myNumber" value="" aria-label="Input number to double">
+            <button id="doubleNumber" aria-label="Double the entered number of maps">Write and double the number of maps!</button>
+            <br></br>
+            <input type="text" id="myText" value="" aria-label="Input map name to guess">
+            <button id="pressText" aria-label="Submit the guessed map name">Guess the maps' name!</button>
+            <h3 class="desc1"><div id="descriere1">Haddonfield is a calm little town, without much going on. Or at least it was. If you were to ask anyone in the town, at the school or in a bar, if there’s something off with Haddonfield, they’d decline. To accept that this was the birthplace of one of the purest form of evil is hard. People living here have always felt safe and protected. There were no boogeymen or other shady characters in the night. No lurking, no skulking. People slept perfectly fine for decades knowing this for a fact. So when Halloween came about, the town’s folks were reluctant to accept that Haddonfield is now for ever known as an evil place. Gossip and made-up stories flooded the town.</div></h3>
+            <h3 class="desc2"><div id="descriere2">Nobody really knows what happened, or if it’s safe nowadays. Some moved away. Others visited as morbid tourists. During the day, a common visitor wouldn’t suspect a thing. But as the sun sets and night comes, an eerie quietness devours the town. People are afraid. And as you visit Haddonfield, you too will get afraid. Not only because it sits upon a dark history, but also because something is off. This isn’t a real place, but instead a warped version of a reality that is no more. An Entity version if you’d like.</div></h3>
+        </div>
+        <div class="hl">
+            <h1 id="titlu2">HAWKIN'S LABORATORY</h1>
+            <p id="rate">Rate this map: <span id="valueDisplay">50</span><span id="intrebare">--Maps' gradient:</span></p>
+            <input type="range" id="myRange" min="0" max="100" value="50" aria-label="Adjust prefferency values">
+            <label for="greenRadio">
+                <input type="radio" id="greenRadio" aria-label="Select Green color"> <span id="g1">Green</span>
+            </label>
+            <label for="blueRadio">
+                <input type="radio" id="blueRadio" aria-label="Select Blue color"> <span id="b1">Blue</span>
+            </label>
+            <h3 class="desc1"><div id="descriere3">The Hawkins National Laboratory was one of many federal compounds devoted to the Project MKUltra program. While conducting mind control experiments with test subjects on the ground floor — mostly on abducted children — the underground was ripped open by an inter-dimensional gate. This rift eventually unleashed an army of creatures in Hawkins.</div></h3>
+            <h3 class="desc2"><div id="descriere4">The authorities managed to seal off the facility, but not before the Chicago Sun-Times published an article exposing the operation and its part in the death of Hawkins High School sophomore, Barbara Holland. The laboratory's multi-story compound still stands, a grim reminder of the disturbing events that happened there, most of which remain undisclosed except to the few who witnessed them first-hand.</div></h3>
+        </div>
+        <div class="gmp">
+            <h1 id="titlu3">GIDEON MEAT PLANT</h1>
+            <p id="careharta">Which map is your favorite?</p>
+            <input type="checkbox" aria-labelledby="ans">
+            <label for="ans11" id="ans">Haddonfield</label><br>
+            <input type="checkbox" aria-labelledby="ans2">
+            <label for="ans22" id="ans2" >Hawkin's Laboratory</label><br>
+            <input type="checkbox" aria-labelledby="ans3">
+            <label for="ans33" id="ans3">Gideon Meat Plant</label><br><br>
+            <input type="submit" value="Submit" aria-label="Submit your favorite map" id="raspunsuri">
+            <h3 class="desc1">Gideon Meatpacking Plant had long lain derelict before its original designer, John Kramer, moved back in, transforming it into the workshop where he would devise his many games, and the location where those games would play out. Surveillance cameras now cover every angle of the building, reporting the progress of test subjects to a bank of monitors: a grainy testament of life and death. In the workshop, hundreds of carefully-rendered plans hang from every wall. Half-completed machinery litters the worktops, next to the tools that helped create them.</h3>
+            <h3 class="desc2">Mannequins are everywhere, their blank eyes staring impassively at their dismembered brethren, strapped into test rigs or already destroyed by successful trials. In many ways, the plant is unchanged: it still rings to the sound of buzz saws and sliced flesh; the drains still clog with congealed blood, fat and hair. The building’s occupants have always been dead meat, but now they have a chance at transformation; a chance to emerge back into the world, reborn as something better. And, if they fail? There’s always the drain.    </h3>
+        </div>
+    </div>
+</body>
+</html>

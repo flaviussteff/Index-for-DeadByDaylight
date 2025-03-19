@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldCondensed.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.topbar-wrap {
+    background-image: url("../greybg.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 2vw;
+    background-size: contain;
+    gap: 2vw;
+    background: rgb(70, 70, 70, 0.6);
+}
+
+.topbar-wrap .logo {
+        background-image: url("../dbdlogo.png");
+        width: 15vw;
+        height: 4.5vw;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        margin-left: 3vw;
+}
+
+.nav-wrap {
+    gap: 1.5em;
+    font-size: 3vw;
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+.social-wrap {
+    display: flex;
+    margin-right: 3vw;
+    top: 10px;
+    right: 3%;
+    z-index: 1000;
+    gap: 10px;
+}
+
+    .social-wrap a {
+        width: 2.5vw;
+        height: 2.5vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline;
+    }
+
+    .social-wrap .facebook {
+        background-image: url("../facebook.png");
+    }
+
+    .social-wrap .instagram {
+        background-image: url("../instagram.png");
+    }
+
+    .social-wrap .discord {
+        background-image: url("../discord.png");
+    }
+
+.nu0:hover {
+    color: #b20000;
+}
+
+.nu1:hover {
+    color: #b20000;
+}
+
+.nu4:hover {
+    color: #b20000;
+}
+
+.nu2 {
+    color: #b20000;
+}
+
+.dropdown-content, .dropdown-content2 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    padding: 10px 10px;
+    z-index: 1;
+    font-size: 1.5vw;
+    background: rgb(70, 70, 70, 0.6);
+    color: grey;
+    list-style-type: none;
+    list-style: none;
+}
+
+.dropdown-content ul li:nth-of-type(even){
+    text-decoration: underline;
+}
+
+.dropdown-content2 ul li:nth-of-type(even){
+    text-decoration: underline;
+}
+
+
+.dropdown-content ul li:nth-child(odd) {
+    color: #b20000;
+}
+
+.dropdown-content2 ul li:nth-child(odd) {
+    color: #b20000;
+}
+
+.nu1:hover .dropdown-content, 
+.nu2:hover .dropdown-content2 {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.hf {
+    background-image: url("haddonfield.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#titlu1 {
+    margin: 0;
+    position: relative;
+    top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: #0096FF;
+    font-size: 38px;
+    text-shadow: 2px 2px 2px black;
+    font-family: Roboto;
+}
+
+#titlu1:before,
+#titlu1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#titlu1:before {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+}
+
+#titlu1:after {
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+
+.desc1 {
+    top: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+.desc2 {
+    top: 11em;
+    padding-left: 2em;
+    padding-right: 2em;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+.desc1:hover, .desc2:hover {
+    background-color: #A30000;
+    font-size: 1.3em;
+    text-align: center;
+    transition: background-color 0.3s ease, font-size 0.3s ease, text-align 0.3s ease-in;
+}
+
+.hl {
+    background-image: url("hawkins.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#titlu2 {
+    margin: 0;
+    position: relative;
+    top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: 	#50C878;
+    font-size: 38px;
+    text-shadow: 2px 2px 2px black;
+    font-family: Roboto;
+}
+
+.gmp {
+    background-image: url("gideon.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#titlu3 {
+    margin: 0;
+    position: relative;
+    top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: 	#b1b1b1;
+    font-size: 38px;
+    text-shadow: 2px 2px 2px black;
+    font-family: Roboto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 300vh;
+    gap: 0.3rem;
+    background-color: black;
+}
+
+#rate {
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+#greenRadio {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+#g1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: green;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+#b1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: rgb(11, 60, 221);
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+#minigame {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+
+#ans, #ans2, #ans3, #careharta {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}

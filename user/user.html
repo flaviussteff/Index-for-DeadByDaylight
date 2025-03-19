@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dead by Daylight</title>
+    <link rel="stylesheet" href="user-styles.css" type="text/css">
+    <script type="text/javascript" src="user-script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="../dbd.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="topbar-wrap">
+        <a class="logo" href="../index.html"></a>
+        <div class="nav-wrap">
+            <a href="../index.html" class="nu0" data-id="top" aria-label="Navigate to the home page">HOME</a>
+            <a href="../characters/characters.html" class="nu1" data-id="characters" aria-haspopup="true" aria-expanded="false">
+                CHARACTERS ↴
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Laurie Strode</li>
+                        <li>Cheryl Mason</li>
+                        <li>David Tapp</li>
+                        <li>Bill Overbeck</li>
+                        <li>Michael Myers</li>
+                        <li>The Ghost Face</li>
+                        <li>The Pig</li>
+                        <li>The Executioner</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="../maps/maps.html" class="nu2" data-id="maps" aria-haspopup="true" aria-expanded="false">
+                MAPS ↴
+                <div class="dropdown-content2">
+                    <ul>
+                        <li>Haddonfield</li>
+                        <li>Hawkins Laboratory</li>
+                        <li>Gideon Meat Plant</li>
+                    </ul>
+                </div>
+            </a>
+            <a href=" " class="nu3" data-id="maps">   </a>
+            <a href="../maps/maps.html" class="nu4" data-id="maps" aria-label="Navigate to the user page">
+                USER
+        </div>
+        <div class="social-wrap">
+            <a href="https://www.facebook.com/DeadByDaylight/" class="facebook"></a>
+            <a href="https://www.instagram.com/deadbydaylight/" class="instagram"></a>
+            <a href="https://discord.com/invite/deadbydaylight" class="discord"></a>
+        </div>
+    </div>
+    <div class="wallpaper">
+        <form id="userForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" placeholder="Name" required>
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput" placeholder="Email" required>
+            <label for="ageInput">Age:</label>
+            <input type="text" id="ageInput" placeholder="Age" required>
+            <button type="submit" id="addUser" color="red">Add User to Newsletter</button>
+        </form>
+        <div id="afisareLista">
+            <p id="errorMessage"></p>
+            <h2 id="add">Newsletter User list:</h2>
+            <ul id="userList"></ul>
+        </div>
+        <canvas id="tutorial" width="300" height="400" style="border:1px solid #000;"></canvas>
+        <canvas id="tutorial2" width="300" height="400" style="border:1px solid #000;"></canvas>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username" required aria-label="Enter your username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" required aria-label="Enter your password">
+            <button type="submit">Login</button>
+            <div id="status"></div>
+            <button id="logoutButton" style="display: none;" aria-label="Log out from your account">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,870 @@
+﻿@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldCondensed.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.topbar-wrap {
+    background-image: url("../greybg.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 2vw;
+    background-size: contain;
+    gap: 2vw;
+    background: rgb(70, 70, 70, 0.6);
+}
+
+.topbar-wrap .logo {
+        background-image: url("../dbdlogo.png");
+        width: 15vw;
+        height: 4.5vw;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        margin-left: 3vw;
+}
+
+.nav-wrap {
+    gap: 1.5em;
+    font-size: 3vw;
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+.social-wrap {
+    display: flex;
+    margin-right: 3vw;
+    top: 10px;
+    right: 3%;
+    z-index: 1000;
+    gap: 10px;
+}
+
+    .social-wrap a {
+        width: 2.5vw;
+        height: 2.5vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline;
+    }
+
+    .social-wrap .facebook {
+        background-image: url("../facebook.png");
+    }
+
+    .social-wrap .instagram {
+        background-image: url("../instagram.png");
+    }
+
+    .social-wrap .discord {
+        background-image: url("../discord.png");
+    }
+
+.nu0:hover {
+    color: #b20000;
+}
+
+.nu1 {
+    color: #b20000;
+}
+
+.nu2:hover {
+    color: #b20000;
+}
+
+.nu4:hover {
+    color: #b20000;
+}
+
+.dropdown-content, .dropdown-content2 {
+    display: none;
+    opacity: 0%;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    padding: 10px 10px;
+    z-index: 1;
+    font-size: 1.5vw;
+    background: rgb(70, 70, 70, 0.6);
+    color: grey;
+    list-style-type: none;
+    list-style: none;
+}
+
+.dropdown-content ul li:nth-of-type(even){
+    text-decoration: underline;
+}
+
+.dropdown-content2 ul li:nth-of-type(even){
+    text-decoration: underline;
+}
+
+
+.dropdown-content ul li:nth-child(odd) {
+    color: #b20000;
+}
+
+.dropdown-content2 ul li:nth-child(odd) {
+    color: #b20000;
+}
+
+.nu1:hover .dropdown-content, 
+.nu2:hover .dropdown-content2 {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg2 {
+    top: 0;
+    left: 0;
+    background-image: url("bg2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    top: 5.5vw;
+    left: 2.5vw;
+    grid-template-rows: 10vw 10vw 10vw 10vw;
+    grid-template-columns: 10vw 10vw 50vw 10vw 15vw;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.rotire {
+    background-image: url("rotate.png");
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: none;
+
+}
+
+@media (max-width: 700px) {
+    .container {
+        display: none;
+    }
+    .rotire {
+        display: block;
+    }
+
+}
+
+.item {
+    background-color: rgba(70, 70,70, 0.2);
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.hidden-checkbox1, .hidden-checkbox2, .hidden-checkbox3, .hidden-checkbox4, .hidden-checkbox5, .hidden-checkbox6, .hidden-checkbox7, .hidden-checkbox8 {
+    display: none;
+}
+
+.item-1 label, .item-2 label, .item-3 label, .item-4 label, .item-5 label, .item-6 label, .item-7 label, .item-8 label{
+        display: block;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+}
+
+.hidden-checkbox1:checked ~ .item-10 {
+    background-image: url("full-laurie.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto; 
+    width: auto;
+}
+
+.hidden-checkbox1:checked ~ .item-11 {
+    background-image: url("ds.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox1:checked ~ .item-12 {
+    background-image: url("oOo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox1:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Laurie Strode\A\ALaurie Strode is a determined Survivor, prepared to weather any challenge. Her personal Perks, Object of Obsession and Decisive Strike, grant her powerful survival abilities at the cost of leaving her exposed. Her Perks are tied to the Killer's Obsession and surviving - no matter what.\A\ALaurie is one of those who just wants a quiet life in the suburbs, hanging out with friends, family and maybe go on a date or two. Laurie is a typical teenager. You could pass her on the street and not think twice. A simple night of babysitting turns into something that will forever change the course of her young life. A knife swooshing through the air. Screams from afar. Noises that plays tricks with her mind. But not Laurie, she’s made of something stronger. Something that won't give up.";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox1:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Decisive Strike:\AUsing whatever is at hand, you stab your aggressor in an ultimate attempt to escape. After being unhooked or unhooking yourself, Decisive Strike activates for the next 40/50/60 seconds: When grabbed or picked up by the Killer, succeed a Skill Check to stab the Killer and escape from their grasp. Stuns the Killer for 4 seconds.";
+    white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox1:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Object of Obsession:\A A supernatural bond links you to the Killer. Whenever the Killer reads your Aura , Object of Obsession activates for the same duration as their Aura-reading action: The Aura of the Killer is revealed to you, Your Aura is revealed to the Killer for 3 seconds. ";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox2:checked ~ .item-10 {
+    background-image: url("full-bill.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox2:checked ~ .item-11 {
+    background-image: url("bt.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox2:checked ~ .item-12 {
+    background-image: url("unbreakable.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox2:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Bill William Overbeck\A\A Bill Overbeck is an old Soldier, accustomed to dealing with critical situations. His personal Perks, Borrowed Time and Unbreakable, make him more powerful in dire moments. He is tough as nails and knows how to survive just about anything. He'll do whatever it takes to help others live to see another day and he's not afraid to take one for the team.\A\A Hardened by years of experience, Bill Overbeck knows that survival rarely comes without sacrifice. No matter the cost, he’ll make sure his teammates live to fight another day. It wouldn’t be the first time he was left for dead. He originates from the 2008 zombie-shooter Game, Left 4 Dead.";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox2:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Borrowed Time:\A You are fuelled with an unexpected energy when saving an ally from a Hook. The Survivors you unhook benefit from the following effects: Extends the duration of their Endurance Effect by 6/8/10 seconds. Extends the duration of their haste Status Effect by 10 seconds."; white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox2:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Unbreakable:\A Past battles have taught you a thing or two about survival. Once per Trial, you can completely recover from the Dying State. Your Recovery speed is increased by 25/30/35 %."; white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox3:checked ~ .item-10 {
+    background-image: url("full-cheryl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox3:checked ~ .item-11 {
+    background-image: url("ra.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox3:checked ~ .item-12 {
+    background-image: url("sg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox3:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Cheryl Mason\A\A Cheryl Mason is a young Veteran of Terror, emboldening both herself and her team. Her personal Perks, Blood Pact and Repressed Alliance, allow her to survive through immense hardship, stay in contact with team members, and plan objectives.\A\A No stranger to indescribable terror, Cheryl Mason has grown emboldened by the looming presence of evil. Drawing strength from the horrors of her past, she has learned to manipulate powers from beyond to achieve her noble goal. She originates from the video game franchise Silent Hill, specifically Silent Hill 3 (2003).";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox3:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Repressed Alliance:\A You are accustomed to being hunted by malicious forces, and you have begun using it to your advantage. After repairing Generators for a total of 55 seconds, Repressed Alliance activates: Press the Active Ability button to call upon The Entity IconHelp entity to block the Generator you are currently repairing for 30 seconds, after which Repressed Alliance deactivates."; white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox3:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Soul Guard:\A You have been through immense hardship and you're stronger for it. After being healed from or having recovered from the Dying State, you benefit from the following effect: Grants the Endurance Status Effect for 4/6/8 seconds. Endurance is cancelled prematurely when performing a Conspicuous Action."; white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox4:checked ~ .item-10 {
+    background-image: url("full-tapp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox4:checked ~ .item-11 {
+    background-image: url("dh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox4:checked ~ .item-12 {
+    background-image: url("tenacity.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox4:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Detective Tapp\A\A David Tapp is an obsessed Detective, able to locate and complete Objectives faster. His personal Perks, Tenacity and Detective's Hunch, make him objective-focused and able to rapidly recover. His Perks are all about determination and not giving up. You are dead set on reaching your goal and survive no matter what.\A\A Haunted by the failures of his past, Detective David Tapp has resolved to make a difference this time around. With years of experience at his disposal and a penchant for astute hunches, not even the most concealed clue will slip under his radar. He originates from the 2004 Horror Movie franchise of the same name, SAW.";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox4:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Detective's Hunch:\A Unlocks potential in your Aura-reading ability. Each time a Generator is completed, the Auras of any Generators, Chests, and Totems within 32/48/64 metres are revealed to you for 10 seconds. If you are holding a Map, any objects revealed by Detective's Hunch will automatically be tracked by it."; white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox4:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Tenacity:\A There is nothing stopping you. Your ferocious tenacity in dire situations allow you to benefit from the following effects: Increases your Crawling speed by 30/40/50 %. Grants the ability to crawl and recover at the same time."; white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox5:checked ~ .item-10 {
+    background-image: url("full-myers.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox5:checked ~ .item-11 {
+    background-image: url("dl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox5:checked ~ .item-12 {
+    background-image: url("pwyf.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox5:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Michael Myers (The Shape)\A\AThe Shape is a haunting Killer, intent on monitoring Survivors from a distance to feed his Power. The more he stalks, the stronger and faster he becomes. His personal Perks, Play with Your Food and Dying Light  , select one Survivor to become his Obsession and will trigger deadly effects based on the Obsession Status.\A\ASomething, or rather someone, is here now. I've never seen this... Shape before. A man hiding behind a mask. He comes with a determination. But more worrying, he comes with an apparent grasp of the hunt. He does not strike me as someone who even went unwillingly to this place. Is there more to this being than I can fathom?";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox5:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Dying Light\A Each time you hook a Survivor other than your Obsession, you gain +1 Token: For as long as the Obsession is alive, all other Survivors suffer from a stack-able 3% per Token Action Speed penalty to Repairing, Healing, and Sabotaging. The Obsession is unaffected by this penalty and instead granted a permanent +33% Action Speed to Healing other Survivors.";
+    white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox5:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Play with Your Food\A Each time you chase your Obsession and let them escape, Play with Your Food gains +1 Token, up to a maximum of 3 Tokens. Grants a stack-able 3/4/5% haste Status Effect per Token, up to a maximum of 9/12/15 %.";
+    white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox6:checked ~ .item-10 {
+    background-image: url("full-executioner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox6:checked ~ .item-11 {
+    background-image: url("fp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox6:checked ~ .item-12 {
+    background-image: url("tot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox6:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Pyramid Head - The Executioner\A\A The Executioner is a map-manipulation Killer, able to torment Survivors with the hazards he creates. Affected Survivors will be vulnerable to his special Hook, the Cage of Atonement and his special mori, Final Judgement. His personal Perks, Forced Penance and Trail of Torment, allow him to aggressively defend his prey while deceiving and tracking Survivors. \A\A Merciless and unforgiving, The Executioner brings his own form of twisted justice to The Fog, tormenting Survivors with hazards around the map. Hooks are an effective tool, but nothing punishes quite like a Cage of Torment. All hope will swiftly fade the moment Pyramid Head raises his mighty blade to deliver the Final Judgment. He originates from the video game franchise Silent Hill, specifically Silent Hill 2 (2001).";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox6:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Forced Penance:\A Those who stand in the way of duty will suffer harsh judgement. Survivors who take a Protection Hit suffer from the Broken Status Effect for the next 60/70/80 seconds."; white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox6:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Trail of Torment:\A You guide your victims along a path of pain and punishment. Performing the Damage Generator action on a Generator activates Trail of Torment: Grants the Undetectable Status Effect until the Generator stops regressing. The Aura of the damaged Generator is revealed to all Survivors in yellow."; white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox7:checked ~ .item-10 {
+    background-image: url("full-pig.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox7:checked ~ .item-11 {
+    background-image: url("myc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox7:checked ~ .item-12 {
+    background-image: url("surveillance.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox7:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "The Pig\A\A The Pig is a tormenting Killer, able to crouch into stealth mode, then ambush Survivors from a short distance. She can also apply Reverse Bear Traps to downed Survivors, forcing them to remove it before the timer runs out, triggering an instant death. Her personal Perks, Surveillance and Make Your Choice, give her more Map control and expose altruistic Survivors.\A\A Creep up and ambush Survivors with The Pig, the stealthy successor to the legendary Jigsaw. But simply hooking them isn’t enough. Survivors can first be punished with a Reverse Bear Trap, which they must race to remove at Jigsaw Boxes across the map. Suddenly, repairing generators isn’t quite so pressing... She originates from the 2004 Horror Movie franchise of the same name, SAW.";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox7:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Make Your Choice:\A Whenever a Survivor is rescued from a Hook, while you are farther than 32 metres away, Make Your Choice activates: Causes the unhooking Survivor to scream and reveal their location to you. Causes them to suffer from the Exposed Status Effect for 40/50/60 seconds."; white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox7:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Surveillance:\A Unlocks potential in your Aura-reading ability. The Auras of regressing Generators are highlighted in white. If the Regression progress is interrupted on a Generator, its Aura will be highlighted in yellow for 8/12/16 seconds."; white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox8:checked ~ .item-10 {
+    background-image: url("full-ghostface.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox8:checked ~ .item-11 {
+    background-image: url("iae.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox8:checked ~ .item-12 {
+    background-image: url("tt.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.hidden-checkbox8:checked ~ .item-9::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "The Ghostface\A\A The Ghost Face is a creepy Killer, able to stalk his victims and sneak up silently using his Power, Night Shroud. Affected Survivors will find themselves vulnerable and oblivious to his presence and must use all of their perception and awareness to protect themselves from his approach. His personal Perks, I'm All Ears and Thrilling Tremors, give him the ability to locate Survivors, defend Generators, and make his Chases unpredictable.\A\A A stealth-focused Killer capable of approaching unseen, The Ghost Face is adept at stalking his prey. Keep tabs on each individual Survivor, patiently marking them for death – provided you can remain hidden. Lie in wait until the perfect time to strike, and down Survivors before they know what hit them.	";
+    white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox8:checked ~ .item-13::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "I'm All Ears:\A Unlocks potential in your Aura-reading ability, sharpening your keen senses in the dark Realm of The Entity. Any Survivor performing a Rushed Vault within 48 metres of your location triggers I'm All Ears: The Aura of that Survivor is revealed to you for 6 seconds."; white-space: pre-line;
+    display: block;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.hidden-checkbox8:checked ~ .item-14::after {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: Roboto;
+    content: "Thrilling Tremors:\A Your dark designs and shrewd composure rouse The Entity. After picking up a Survivor, all Generators not currently being repaired by Survivors are blocked by The Entity for the next 16 seconds. The Auras of blocked Generators are highlighted to you in white."; white-space: pre-line;
+    text-shadow: 2px 2px 2px black;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.item-1 {
+    display: inline-block;
+    cursor: pointer;
+    background-image: url("laurie.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    animation: slideAnimation 3s ease-in-out infinite;
+}
+
+.item-2 {
+    background-image: url("bill.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    animation: slideAnimation 3s ease-in-out infinite;
+}
+
+.item-3 {
+    background-image: url("cheryl.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    animation: slideAnimation 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.item-4 {
+    background-image: url("tapp.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    animation: slideAnimation 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.item-5 {
+    display: inline-block;
+    cursor: pointer;
+    background-image: url("myers.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    animation: slideAnimation2 3s ease-in-out infinite;
+}
+
+.item-6 {
+    background-image: url("executioner.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    animation: slideAnimation2 3s ease-in-out infinite;
+}
+
+.item-7 {
+    background-image: url("pig.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    animation: slideAnimation2 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.item-8 {
+    background-image: url("ghostface.png");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    animation: slideAnimation2 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.item-9 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item-10 {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 5;
+}
+
+.item-11 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item-12 {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item-13 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.item-14 {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+@keyframes slideAnimation {
+    from {box-shadow: inset 0 0 0 1000px rgba(0,0,0,.0);}
+    to {box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);}
+    from {opacity: 1;}
+    to {opacity: 0.5;}
+    0% { transform: rotate(0deg); }
+    16.67% { transform: rotate(-20deg); }
+    33.33% { transform: rotate(20deg); }
+    50% { transform: rotate(0deg); }  
+    100% { transform: rotate(0deg); } 
+
+}
+
+@keyframes slideAnimation2 {
+    from {box-shadow: inset 0 0 0 1000px rgba(0,0,0,.0);}
+    to {box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);}
+    from {opacity: 1;}
+    to {opacity: 0.5;}
+    0% { transform: rotate(0deg); }
+    16.67% { transform: rotate(20deg); }
+    33.33% { transform: rotate(-20deg); }
+    50% { transform: rotate(0deg); }  
+    100% { transform: rotate(0deg); } 
+}

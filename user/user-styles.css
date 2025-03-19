@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldCondensed.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.topbar-wrap {
+    background-image: url("../greybg.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 2vw;
+    background-size: contain;
+    gap: 2vw;
+    background: rgb(70, 70, 70, 0.6);
+}
+
+.topbar-wrap .logo {
+        background-image: url("../dbdlogo.png");
+        width: 15vw;
+        height: 4.5vw;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        margin-left: 3vw;
+}
+
+.nav-wrap {
+    gap: 1.5em;
+    font-size: 3vw;
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+.social-wrap {
+    display: flex;
+    margin-right: 3vw;
+    top: 10px;
+    right: 3%;
+    z-index: 1000;
+    gap: 10px;
+}
+
+    .social-wrap a {
+        width: 2.5vw;
+        height: 2.5vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline;
+    }
+
+    .social-wrap .facebook {
+        background-image: url("../facebook.png");
+    }
+
+    .social-wrap .instagram {
+        background-image: url("../instagram.png");
+    }
+
+    .social-wrap .discord {
+        background-image: url("../discord.png");
+    }
+
+.nu0:hover {
+    color: #b20000;
+}
+
+.nu1:hover {
+    color: #b20000;
+}
+
+.nu2:hover {
+    color: #b20000;
+}
+
+.nu4 {
+    color: #b20000;
+}
+.dropdown-content, .dropdown-content2 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    padding: 10px 10px;
+    z-index: 1;
+    font-size: 1.5vw;
+    background: rgb(70, 70, 70, 0.6);
+    color: grey;
+    list-style-type: none;
+    list-style: none;
+}
+
+.dropdown-content ul li:nth-of-type(even){
+    text-decoration: underline;
+}
+
+.dropdown-content2 ul li:nth-of-type(even){
+    text-decoration: underline;
+}
+
+
+.dropdown-content ul li:nth-child(odd) {
+    color: #b20000;
+}
+
+.dropdown-content2 ul li:nth-child(odd) {
+    color: #b20000;
+}
+
+.nu1:hover .dropdown-content, 
+.nu2:hover .dropdown-content2 {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wallpaper {
+    background-image: url("dbdwallpaper.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-attachment: fixed;
+    overflow: hidden;
+    filter: grayscale(0.3);
+}
+
+#add {
+    top: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+#listafull {
+    top: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+#userList {
+    top: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: relative;
+    float: left;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    text-align: left;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 1.2em;
+}
+
+#errorMessage {
+    top: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    position: center;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Roboto', sans-serif;
+    text-overflow: ellipsis;
+    text-align: left;
+    overflow: hidden; 
+    max-width: 100%;
+    font-size: 2em;
+}
+
+#userForm {
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: block;
+}
+input {
+    padding-left: 2em;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+#errorMessage {
+    color: red;
+    font-size: 14px;
+}
+#userList li {
+    
+    margin-bottom: 5px;
+}
+
+#userList li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: auto; 
+    height: auto; 
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#userList li button:hover {
+    background-color: darkred;
+}
+
+
+button.delete {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#afisareLista{
+    margin-top: 20px;
+    margin-bottom: 4rem;
+}
+#loginForm {
+    float: right;
+    padding: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#tutorial {
+    padding-left: 35.5%;
+}
